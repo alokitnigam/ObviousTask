@@ -9,15 +9,16 @@ import com.example.obvious.DI.Models.PodModel
 
 import javax.inject.Inject
 
-class MainActivityViewModel @Inject
+class ImageDetailsViewModel @Inject
 constructor(private val jsonReader : JSONFileReader) : ViewModel() {
     val podList=MutableLiveData<ArrayList<PodModel>>()
+    var currentPosition : Int = 0
 
     init {
         getPodsList()
     }
 
-    private fun getPodsList(){
+    fun getPodsList(){
         podList.postValue(jsonReader.getPodList())
     }
 

@@ -1,7 +1,7 @@
 package com.example.divumtask.DI.VMFactory
 
 import androidx.lifecycle.ViewModel
-import com.example.divumtask.ViewModels.MainActivityViewModel
+import com.example.obvious.ViewModels.MainActivityViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

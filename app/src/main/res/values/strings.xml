@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Obvious</string>
     <string name="electric_night">Electric Night</string>
+
+    <string name="title_activity_image_details">ImageDetailsActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="date">Date : %s</string>
+    <string name="explaination">Explanation: %s</string>
+    <string name="pager_transition">pager</string>
 </resources>

@@ -31,7 +31,7 @@ class JSONFileReader(private val context: Context) {
         return json
     }
 
-    fun parseJSON():ArrayList<PodModel>{
+    private fun parseJSON():ArrayList<PodModel>{
         try {
             val jsonArray = JSONArray(loadJSONFromAsset())
 
@@ -56,7 +56,7 @@ class JSONFileReader(private val context: Context) {
         return list
     }
 
-    public fun getPodList(): ArrayList<PodModel> {
+     fun getPodList(): ArrayList<PodModel> {
         if (list.isNotEmpty())
             return list
         else

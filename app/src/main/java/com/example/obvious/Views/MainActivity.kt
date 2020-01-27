@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.DisplayMetrics
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
-import com.example.divumtask.ViewModels.MainActivityViewModel
+import com.example.obvious.ViewModels.MainActivityViewModel
 import com.example.obvious.Views.Adapter.ImageAdapter
 import com.example.obvious.Base.BaseActivity
 import com.example.obvious.DI.Models.PodModel
@@ -23,6 +23,7 @@ class MainActivity : BaseActivity<MainActivityViewModel>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setObservers()
+
         imagesrv.layoutManager = GridLayoutManager(this,2)
         imagesrv.adapter = imageAdapter
         imageAdapter.setBoardItemSizeInAdapter(getBoardItemSize())
@@ -47,7 +48,7 @@ class MainActivity : BaseActivity<MainActivityViewModel>() {
 
     private fun getBoardItemSize(): Int {
         val dm = resources.displayMetrics
-        val paddingFrame = convertDpToPixel(4f, this).roundToInt()
+        val paddingFrame = convertDpToPixel(dm.density, this).roundToInt()
         val frameWidth = dm.widthPixels - paddingFrame
         val itemWidth = (frameWidth / 2)
         return itemWidth
