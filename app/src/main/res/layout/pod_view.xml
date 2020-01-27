@@ -1,19 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/board_frame"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/length_4"
+    app:cardCornerRadius="@dimen/length_10"
+    app:cardElevation="@dimen/length_0">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rect_gradient_black" />
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/length_8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingStart="@dimen/length_8"
+            android:paddingTop="@dimen/length_4"
+            android:paddingEnd="@dimen/length_8"
+            android:paddingBottom="@dimen/length_4"
+            android:singleLine="true"
+            android:text="@string/electric_night"
+            android:textAppearance="@style/TextAppearance.h5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_14" />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

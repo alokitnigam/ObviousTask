@@ -2,7 +2,7 @@ package  com.example.divumtask.DI.Modules
 
 
 import com.example.obvious.ActivityModules.MainActivityModule
-import com.example.obvious.MainActivity
+import com.example.obvious.Views.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
