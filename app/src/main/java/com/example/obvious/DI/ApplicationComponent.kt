@@ -1,10 +1,10 @@
 package com.example.obvious.DI
 
 import android.app.Application
-import com.example.divumtask.DI.Modules.ActivityBindingModule
-import com.example.divumtask.DI.Modules.ContextModule
-import com.example.divumtask.DI.VMFactory.MyViewModelModule
-import com.example.divumtask.DI.VMFactory.ViewModelFactoryModule
+import com.example.obvious.DI.Modules.ActivityBindingModule
+import com.example.obvious.DI.Modules.ContextModule
+import com.example.obvious.DI.VMFactory.MyViewModelModule
+import com.example.obvious.DI.VMFactory.ViewModelFactoryModule
 import com.example.obvious.DI.Local.JSONReaderModule
 import dagger.BindsInstance
 import dagger.Component

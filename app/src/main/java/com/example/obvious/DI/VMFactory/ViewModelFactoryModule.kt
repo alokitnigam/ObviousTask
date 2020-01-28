@@ -1,6 +1,7 @@
-package com.example.divumtask.DI.VMFactory
+package com.example.obvious.DI.VMFactory
 
 import androidx.lifecycle.ViewModelProvider
+import com.example.obvious.DI.VMFactory.DaggerViewModelFactory
 import dagger.Binds
 import dagger.Module
 

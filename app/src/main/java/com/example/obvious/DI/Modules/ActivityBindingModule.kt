@@ -1,4 +1,4 @@
-package  com.example.divumtask.DI.Modules
+package  com.example.obvious.DI.Modules
 
 
 import com.example.obvious.ActivityModules.ImageDetailsActivityModule

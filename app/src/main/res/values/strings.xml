@@ -8,4 +8,6 @@
     <string name="date">Date : %s</string>
     <string name="explaination">Explanation: %s</string>
     <string name="pager_transition">pager</string>
+    <string name="image_title_not_found">Dummy Title</string>
+    <string name="desc_title_not_found">Dummy Desc</string>
 </resources>

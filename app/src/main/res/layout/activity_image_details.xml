@@ -44,7 +44,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/font_20"
             android:textStyle="bold"
-            tools:text="Image Name" />
+            tools:text="@string/image_title_not_found" />
 
         <TextView
             android:id="@+id/date"
@@ -83,12 +83,10 @@
             android:layout_marginEnd="@dimen/length_16"
             android:layout_marginBottom="@dimen/length_8"
             android:layout_weight="1"
-            android:ellipsize="end"
             android:fontFamily="@font/roboto_medium"
-            android:maxLines="4"
             android:textColor="@color/white"
             android:textSize="@dimen/font_14"
-            tools:text="Image Name \nImage Name\nImage Name\nImage Name" />
+            tools:text="@string/desc_title_not_found" />
 
 
     </LinearLayout>

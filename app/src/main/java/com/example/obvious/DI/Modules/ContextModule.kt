@@ -1,4 +1,4 @@
-package com.example.divumtask.DI.Modules
+package com.example.obvious.DI.Modules
 
 import android.app.Application
 import android.content.Context

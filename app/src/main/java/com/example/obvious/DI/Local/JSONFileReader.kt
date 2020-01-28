@@ -15,7 +15,7 @@ class JSONFileReader(private val context: Context) {
         loadJSONFromAsset()
     }
 
-    private fun loadJSONFromAsset(): String? {
+    public fun loadJSONFromAsset(): String? {
         var json: String? = null
         json = try {
             val inputStream: InputStream = context.assets.open("data.json")
@@ -31,7 +31,7 @@ class JSONFileReader(private val context: Context) {
         return json
     }
 
-    private fun parseJSON():ArrayList<PodModel>{
+    fun parseJSON():ArrayList<PodModel>{
         try {
             val jsonArray = JSONArray(loadJSONFromAsset())
 
@@ -56,7 +56,7 @@ class JSONFileReader(private val context: Context) {
         return list
     }
 
-     fun getPodList(): ArrayList<PodModel> {
+    public fun getPodList(): ArrayList<PodModel> {
         if (list.isNotEmpty())
             return list
         else

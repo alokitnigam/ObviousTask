@@ -14,6 +14,7 @@ import com.example.obvious.ViewModels.ImageDetailsViewModel
 import com.example.obvious.Base.BaseActivity
 import com.example.obvious.DI.Models.PodModel
 import com.example.obvious.R
+import com.example.obvious.Utils
 import com.example.obvious.Views.Adapter.ImageDetailsAdapter
 import com.example.obvious.Views.Decorators.BackgroundToForegroundTransformer
 import kotlinx.android.synthetic.main.activity_image_details.*
@@ -53,6 +54,7 @@ class ImageDetailsActivity : BaseActivity<ImageDetailsViewModel>(),
         setUpPager()
         setUpWindowAttributes()
 
+//        Utils.makeTextViewResizable(explaination,3,"...Read More",true)
 
     }
 
@@ -230,6 +232,8 @@ class ImageDetailsActivity : BaseActivity<ImageDetailsViewModel>(),
 
         isViewsVisible = !isViewsVisible
     }
+
+
 
 
 }

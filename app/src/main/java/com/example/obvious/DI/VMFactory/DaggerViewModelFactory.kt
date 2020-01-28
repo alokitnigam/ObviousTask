@@ -1,4 +1,4 @@
-package com.example.divumtask.DI.VMFactory
+package com.example.obvious.DI.VMFactory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
